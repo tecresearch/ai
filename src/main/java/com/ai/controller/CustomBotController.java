@@ -37,7 +37,9 @@ public class CustomBotController {
         Map<String,Object> map1=new LinkedHashMap<>();
         map1.put("version","1.0");
         map1.put("prompt",prompt);
-        map1.put("result",chatGptResponse.getChoices().get(0).getMessage().getContent());
+
+            map1.put("result",chatGptResponse.getChoices().get(0).getMessage().getContent());
+
         Map<String,Object> map=new LinkedHashMap<>();
         map.put("company","HCLTech");
         map.put("team","tecresearch");
