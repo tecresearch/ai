@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class Message {
 
@@ -25,6 +24,11 @@ public class Message {
     }
 
     public void setContent(String content) {
+        this.content = content;
+    }
+
+    public Message(String role, String content) {
+        this.role = role;
         this.content = content;
     }
 }
